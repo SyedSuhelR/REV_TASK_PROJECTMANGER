@@ -1,0 +1,105 @@
+<p>project-details works!</p>
+<div class="card">
+    <form formGroup="userForm">
+
+        <div class="mt-5 box">
+            <div class="form-row">
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label for="">Name</label>
+                    </div>
+                    <div class="form-row" style="margin-top: -10px;">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label for="">Adress</label>
+                    </div>
+                    <div class="form-row" style="margin-left: -10px;">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="Adress">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label for="">Contact</label>
+                    </div>
+                    <div class="form-row" style="margin-left: -10px;">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="Contact">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label for="">Email</label>
+                    </div>
+                    <div class="form-row" style="margin-left: -10px;">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="Adress">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="form-group mt-4">
+                        <label for="">pin</label>
+                    </div>
+                    <div class="form-row " style="margin-left: -10px;">
+                        <div class="col">
+                            <input type="text" formControlName="name" class="form-control" placeholder="Adress">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row mt-4">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary" (click)="addItems()">Add</button> 
+                        </div>
+                        <div class="col-md-6">
+
+                        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+
+
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </form>
+
+    <div class="col-md-8 mt-4 mb-4">
+        <table class="table table-boardered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>contact</th>
+                    <th>Email</th>
+                    <th>pin</th>
+        
+               
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listdata">
+                    <td><span>{{item.Name}}</span></td>
+                    <td><span>{{item.Adress}}</span></td>
+                    <td><span>{{item.contact}}</span></td>
+                    <td><span>{{item.pin}}</span></td>
+                    <td><span>{{item.email}}</span></td>
+                   <td><button type="button" class="btn btn-primary" (click)="remove(item)">Remove</button></td> 
+
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
