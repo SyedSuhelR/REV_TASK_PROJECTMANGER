@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { ProfileService } from '../profile.service';
+
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css'
+  selector: 'app-edit-profile',
+  templateUrl: './edit-profile.component.html',
+  styleUrl: './edit-profile.component.css'
 })
-export class ProfileComponent {
+export class EditProfileComponent {
+
   showProfile: boolean = true;
   editing: boolean = false;
   profile: any = { name: '', email: '', mobile: '' }; // Initialize profile to avoid undefined

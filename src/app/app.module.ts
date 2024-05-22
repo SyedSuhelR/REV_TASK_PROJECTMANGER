@@ -6,7 +6,12 @@ import { AppComponent } from './app.component';
 import { PmloginComponent } from './pmlogin/pmlogin.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { EditProfileComponent } from './edit-profile/edit-profile.component';
+
+
+
 
 
 
@@ -19,12 +24,16 @@ import { ProfileComponent } from './profile/profile.component';
     MainPageComponent,
     ProjectDetailsComponent,
     ProfileComponent,
+    EditProfileComponent
+    
+
   
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

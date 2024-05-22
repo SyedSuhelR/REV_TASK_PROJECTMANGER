@@ -27,7 +27,7 @@
 
 #login-btn{
 
-    margin-right: 120px;
+    margin-right: 0px;
     height: 40px;
     width: 80px;
     border: 2px solid rgb(245, 244, 244);
@@ -35,6 +35,7 @@
     color: rgb(232, 220, 220);
     background-color: rgb(34, 34, 34);
     font-size: 16px;
+    margin-top: 10px;
 }
 
 #login-btn:hover{
@@ -121,10 +122,19 @@
 }
 
 footer{
-    height: 159px;
+    height: 290px;
     width: auto;
     background-color: rgb(60, 52, 78);  
     color: white;
+
+
+
+}
+
+.foot span{
+
+    margin: 20px;
+    font-size: medium;
 }
 
 #profile-1 {
@@ -140,4 +150,102 @@ footer{
     
 }
 
+
+.foot{
+    margin: 20px ;
+    padding: 60px;
+}
+
+.icons-foot{
+    height: 30PX;
+    width: 30px;
+ margin: 10px;
+ 
+}
+
+
+.logo{
+    width: 120px;
+}
+.user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+ 
+.sub-menu-wrap{
+    position: absolute;
+    top:100%;
+    right: 0%;
+    width: 220px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #121111;
+    padding: 0px;
+    margin: 10px;
+    color: white;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3{
+    font-weight: 500;
+}
+ 
+.user-info img{
+    width: 60px;
+    border-radius:50% ;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+    margin-right: 100px;
+}
+
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right:15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
 
